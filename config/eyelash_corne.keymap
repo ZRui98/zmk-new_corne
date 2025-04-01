@@ -63,20 +63,20 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "QWERTY";
+        base {
+            display-name = "base";
             bindings = <
-&kp TAB    &kp Q           &kp W           &kp E               &kp R             &kp T                                      &mmv MOVE_UP                     &kp Y        &kp U              &kp I                &kp O            &kp P               &kp BSPC
-&td0       &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                      &mmv MOVE_LEFT  &kp ENTER       &mmv MOVE_RIGHT  &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp SQT
-&kp LCTRL  &kp Z           &kp X           &kp C               &kp V             &kp B        &kp K_MUTE                    &mmv MOVE_DOWN                   &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH            &kp ESC
-                                           &kp LGUI            &mo 1             &lt 1 SPACE                                                                 &lt 2 ENTER  &kp BACKSPACE      &kp RALT
+&kp TAB         &kp Q           &kp W           &kp E               &kp R             &kp T                                      &mmv MOVE_UP                     &kp Y        &kp U              &kp I                &kp O            &kp P               &kp EQUAL
+&kp LEFT_SHIFT  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                      &mmv MOVE_LEFT  &kp ENTER       &mmv MOVE_RIGHT  &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp SQT
+&kp LCTRL       &kp Z           &kp X           &kp C               &kp V             &kp B        &kp K_MUTE                    &mmv MOVE_DOWN                   &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH            &kp MINUS
+                                                &kp LGUI            &mo 1             &lt 1 SPACE                                                                 &lt 2 ENTER  &kp BACKSPACE      &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        lower_layer {
-            display-name = "NUMBER";
+        number {
+            display-name = "number";
             bindings = <
 &trans        &trans                 &trans                 &trans                     &trans                   &trans                                      &mmv MOVE_UP                     &trans           &trans           &trans            &trans             &kp HOME  &kp PRINTSCREEN
 &kp NUMBER_1  &mt LEFT_GUI NUMBER_2  &mt LEFT_ALT NUMBER_3  &mt LEFT_CONTROL NUMBER_4  &mt LEFT_SHIFT NUMBER_5  &kp NUMBER_6                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans           &trans           &trans            &trans             &trans    &trans
@@ -87,8 +87,8 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
+        mouse {
+            display-name = "mouse";
             bindings = <
 &bt BT_NXT    &trans        &trans      &trans  &trans  &trans                               &mmv MOVE_UP                     &mkp LCLK  &mkp RCLK  &trans    &trans     &trans  &trans
 &bt BT_SEL 0  &trans        &trans      &trans  &trans  &trans               &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp LEFT   &kp UP     &kp DOWN  &kp RIGHT  &trans  &trans
@@ -99,8 +99,8 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
-            display-name = "Fn";
+        fn {
+            display-name = "fn";
             bindings = <
 &trans  &trans  &trans  &trans   &trans   &trans                                 &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &trans
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
@@ -109,6 +109,15 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        game {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 
