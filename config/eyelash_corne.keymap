@@ -102,7 +102,7 @@
         fn {
             display-name = "fn";
             bindings = <
-&trans  &trans  &trans  &trans   &trans   &trans                                 &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans   &trans   &trans                                 &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &to 4
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
 &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &trans  &trans  &trans  &trans  &trans
                         &trans   &trans   &trans                                                                  &trans  &trans  &trans
@@ -113,10 +113,10 @@
 
         game {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans          &trans  &trans  &trans            &trans  &trans                            &mmv MOVE_UP                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans
+&trans          &kp Q   &kp W   &kp E             &trans  &trans            &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans        &trans        &trans        &trans        &trans        &trans
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D             &trans  &trans  &trans                    &mmv MOVE_DOWN                   &trans        &trans        &trans        &trans        &trans        &to 0
+                                &kp LEFT_CONTROL  &trans  &trans                                                             &trans        &trans        &trans
             >;
         };
     };
