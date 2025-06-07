@@ -90,7 +90,7 @@
             bindings = <
 &kp TILDE  &kp NUMBER_1           &kp NUMBER_2           &kp NUMBER_3               &trans                   &trans                                &mmv MOVE_UP                     &trans  &trans           &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PRINTSCREEN
 &trans     &mt LEFT_GUI NUMBER_4  &mt LEFT_ALT NUMBER_5  &mt LEFT_CONTROL NUMBER_6  &mt LEFT_SHIFT NUMBER_0  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &kp RIGHT_SHIFT  &kp RCTRL         &kp RIGHT_ALT         &kp RIGHT_GUI          &kp INSERT
-&trans     &kp N7                 &kp NUMBER_8           &kp NUMBER_9               &trans                   &trans  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans                 &trans
+&trans     &kp N7                 &kp NUMBER_8           &kp NUMBER_9               &trans                   &trans  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH          &trans
                                                          &trans                     &trans                   &trans                                                                 &trans  &trans           &trans
             >;
 
