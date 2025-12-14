@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-option$$
   number:
-  - '~'
+  - {t: '`', s: '~'}
   - '1'
   - '2'
   - '3'
