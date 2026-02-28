@@ -123,10 +123,19 @@
 
         game {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4     &kp F5                               &mmv MOVE_UP                     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10  &trans
-&trans  &kp T   &kp Q   &kp W   &kp E      &kp R                &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5   &trans
-&trans  &kp V   &kp A   &kp S   &kp D      &kp F      &trans                    &mmv MOVE_DOWN                   &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0   &to 0
-                        &none   &kp SPACE  &kp SPACE                                                             &trans        &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &mmv MOVE_UP                     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp T         &kp Q         &kp W         &kp E         &kp R                   &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &kp I         &kp J         &kp K         &kp L         &kp N5        &trans
+&trans  &kp V         &kp A         &kp S         &kp D         &kp F         &trans                    &mmv MOVE_DOWN                   &kp Z         &kp M         &kp N8        &kp N9        &kp N0        &to 0
+                                    &none         &kp SPACE     &lt 5 SPACE                                                              &kp ENTER     &trans        &trans
+            >;
+        };
+
+        game_fn {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                    &trans          &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans   &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
     };
