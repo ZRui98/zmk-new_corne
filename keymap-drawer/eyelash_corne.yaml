@@ -231,7 +231,7 @@ layers:
   - S
   - D
   - F
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Z
   - M
