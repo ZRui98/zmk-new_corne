@@ -197,7 +197,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   game:
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '1'
   - '2'
   - '3'
@@ -239,7 +239,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: base, h: toggle}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: game_fn}
   - {t: '$$mdi:keyboard-return$$', type: enter}
